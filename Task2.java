@@ -1,25 +1,18 @@
-package java_hometasks;
+package java_hometasks2;
 
 public class Task2 {
-    public static void main (String [] args) {
-        //Задание 2
-        //Необходимо найти сумму всех четных чисел в последовательности Фибоначи, до
-        //определенного индекса "n".
-        //Например:
-        //    Последовательность: 0, 1, 1, 2, 3, 5, 8, 13, 21
-        //    n = 7
-        //    Сумма всех четных до 7го.  равна 2 + 8 = 10.
 
-        int [] array = {0, 1, 1, 2, 3, 5, 8, 13, 21};
-        int sum = 0;
+    public static void main(String[] args) {
+        Box unknownBox = new Box();
+        unknownBox.x = 10;
+        unknownBox.y = 12;
+        unknownBox.z = 0;
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0 && array[i] != 7) {
-                sum = sum + array[i];
-            }
+        System.out.println(unknownBox.displayTypeOfBox());
 
-        }
-        System.out.println(sum);
+        Box unknownBox1 = new Box(1, 2, 3);
+        Box unknownBox2 = new Box(1);
+        Box unknownBox3 = new Box(1, 2);
 
     }
 }

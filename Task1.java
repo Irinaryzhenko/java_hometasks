@@ -1,15 +1,21 @@
-package java_hometasks;
+package java_hometasks2;
+
+import java.util.Map;
 
 public class Task1 {
-    public static void main (String[] args) {
-        int [] array = {11, 10, 15, 5}; // числом "n" по условиям задачи будем 10
-        int sum = 0;
+    public static void main(String[] args) {
+        String name = "JANUARY";
+        Month month = Month.valueOf(name);
+        int number;
+        number = Month.getNumberByName(name);
+        System.out.println(number);
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] != 10) {
-                sum = sum + array[i];
-            }
-        }
-        System.out.println(sum);
+        number = 6;
+        Month month1 = Month.valueOf(name);
+        String nameOfMonth = Month.getNameOfNumbers(number);
+        System.out.println(nameOfMonth);
+
+
     }
 }
+
