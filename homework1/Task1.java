@@ -1,4 +1,4 @@
-package java_hometasks;
+package java_hometasks.homework1;
 
 public class Task1 {
     public static void main (String[] args) {
