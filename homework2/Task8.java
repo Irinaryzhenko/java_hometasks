@@ -1,33 +1,28 @@
 package java_hometasks.homework2;
 
 import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 
 public class Task8 {
+
     public static void main(String[] args) {
-        String someText = "Сustomer's card number 4433-1234-4321-4565";
-        String[] words = someText.split(" ");
-        String regExp = "[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}";
-
-        for(String word : words){
-            if (word.matches(regExp)) {
-                String cardNumber = word.substring(0,19);
-                System.out.println(cardNumber);
-
-
-
-
-
-
-
-
-
-
-
-            }
+        String str = "Ваша карта N (2589-7859-7458-8521) активна";
+        Pattern pattern = Pattern.compile("\\b(\\d{4}-){3}\\d{4}\\b");
+        Matcher matcher = pattern.matcher(str);
+        if (matcher.find()) {
+            System.out.println(matcher.group());
         }
-
-
-
-
     }
 }
+
+
+
+
+
+
+
+
+
+
+

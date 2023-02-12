@@ -1,18 +1,12 @@
 package java_hometasks.homework2;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class Task7 {
     public static void main(String[] args) {
-        int count = 0;
-        String s = "Alice arrived in AlabamA city yesterday";
-
-        String[] words = s.split(" ");
-
-        for (int i = 0; i < words.length; i++) {
-            if ((words[i].startsWith("a") || words[i].startsWith("A")) && (words[i].endsWith("a") || words[i].endsWith("A"))) {
-                count++;
-                System.out.println(words[i]);
-            }
-        }
-        System.out.println(count + " words");
+        String str = "анапа, аа, а АНАНАСИНА, африка";
+        Pattern pat = Pattern.compile("\\b[Аа][А-Яа-я]*[Аа]*\\b|\\b[Аа]\\b");
+        Matcher mat = pat.matcher(str);
+        System.out.println(mat.find());
     }
 }
