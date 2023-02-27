@@ -5,9 +5,12 @@ public class ShowRoom implements Service{
     ColorService colorService;
     WheelService wheelService;
 
-    Car createCar(Model model, Engine engine, Wheel wheel, Color color) {
-        Car newCreatedCar;
-        return newCreatedCar(model, engine, wheel, color);
+    Car newCreatetdCar(Model model, Engine engine, Wheel wheel, Color color) {
+
+    }
+
+    private Car createCar(Model model, Engine engine, Wheel wheel, Color color) {
+        return newCreatetdCar(Model model, Engine, Wheel wheel, Color color);
     }
 
     @Override
