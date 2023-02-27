@@ -1,4 +1,4 @@
-package java_hometasks.homework2.practicalTasks;
+package java_hometasks.homework2_and_3.practicalTasks;
 
 public class Task2 {
     public static void main(String[] args) {
@@ -58,5 +58,39 @@ public class Task2 {
         System.out.println(weeks + week + dayResult + day +hourResult + hour + minResult + minute + secResult + second);
 
 
+//        Определить является ли целое число чётным либо нечётным
+        int number = 15;
+
+        if (number % 2 == 0) {
+            System.out.println("Число четное");
+
+        } else System.out.println("Число нечетное");
+
+
+        // По порядковому номеру пальца руки необходимо вывести его название на экран.
+
+        int finger = 10;
+
+        switch (finger) {
+            case  1:
+                System.out.println("Большой палец");
+                break;
+            case 2 :
+                System.out.println("Указательный");
+                break;
+            case 3 :
+                System.out.println("Средний");
+                break;
+            case 4 :
+                System.out.println("Безымянный");
+                break;
+            case 5 :
+                System.out.println("Мизинец");
+                break;
+            default:
+                System.out.println("Упс! это не палец!");
+        }
+
     }
+
 }

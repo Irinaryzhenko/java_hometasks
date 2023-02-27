@@ -1,4 +1,4 @@
-package java_hometasks.homework2;
+package java_hometasks.homework2_and_3;
 
 public enum Month {
         JANUARY(1),
@@ -17,6 +17,7 @@ public enum Month {
         private int number;
 
         Month(int i) {
+
             number = i;
         }
 

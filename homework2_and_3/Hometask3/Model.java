@@ -1,4 +1,4 @@
-package java_hometasks.homework2.Hometask3;
+package java_hometasks.homework2_and_3.Hometask3;
 
 public enum Model {
     POlO("POLO", 2022),
