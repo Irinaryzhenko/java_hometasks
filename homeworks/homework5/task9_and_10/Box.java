@@ -1,8 +1,8 @@
-package java_hometasks.homeworks.homework5;
+package java_hometasks.homeworks.homework5.task9_and_10;
 
 import java.io.Serializable;
 
-public class Box implements Serializable {
+public class Box implements Serializable, Comparable<Box>{
     private int x;
     private int y;
     private int z;
@@ -12,6 +12,12 @@ public class Box implements Serializable {
         this.y = y;
         this.z = z;
     }
+    public int volume() {
+
+        return this.z * this.y * this.x;
+    }
+
+
 
     @Override
     public String toString() {
@@ -20,5 +26,10 @@ public class Box implements Serializable {
                 ", y=" + y +
                 ", z=" + z +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Box box) {
+        return 0;
     }
 }
