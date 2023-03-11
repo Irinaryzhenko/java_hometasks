@@ -11,14 +11,14 @@ public class Task8 {
             try (BufferedReader reader1 = new BufferedReader(new FileReader(firstFile));
                  BufferedReader reader2 = new BufferedReader(new FileReader(secondFile));
                  BufferedWriter writer = new BufferedWriter(new FileWriter(resultFile))) {
-                String superText;
+                String neededText;
                 HashSet<String> set1 = new HashSet<>();
                 HashSet<String> set2 = new HashSet<>();
-                while ((superText = reader1.readLine()) != null) {
-                    set1.add(superText);
+                while ((neededText = reader1.readLine()) != null) {
+                    set1.add(neededText);
                 }
-                while ((superText = reader2.readLine()) != null) {
-                    set2.add(superText);
+                while ((neededText = reader2.readLine()) != null) {
+                    set2.add(neededText);
                 }
                 set1.retainAll(set2);
                 for (String s : set1) {
@@ -28,6 +28,4 @@ public class Task8 {
                 e.printStackTrace();
             }
         }
-
-
 }
