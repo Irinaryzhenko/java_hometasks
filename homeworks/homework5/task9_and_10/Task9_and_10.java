@@ -9,7 +9,7 @@ import java.util.List;
 //Десериализовать объекты из задания #9. Отсортировать их по объёму.
        // Вывести на экран. Записать в файл (OUTPUT) самый большой объем.
 public class Task9_and_10 {
-    private static final String FILE_NAME = "C:\\Users\\User\\Desktop\\Home\\java_hometasks\\homeworks\\homework5\\box";
+    private static final String FILE_NAME = "C:\\Users\\User\\Desktop\\Home\\java_hometasks\\homeworks\\homework5\\task9_and_10\\output";
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
@@ -52,7 +52,7 @@ public class Task9_and_10 {
         System.out.println(maxVolumeBox);
 
 
-        File file = new File("C:\\Users\\User\\Desktop\\Home\\java_hometasks\\homeworks\\homework5\\output");
+        File file = new File("C:\\Users\\User\\Desktop\\Home\\java_hometasks\\homeworks\\homework5\\task9_and_10\\output");
         FileWriter fr = null;
         try {
             fr = new FileWriter(file);
