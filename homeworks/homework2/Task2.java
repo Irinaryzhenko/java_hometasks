@@ -1,4 +1,6 @@
-package java_hometasks.homework2_and_3;
+package java_hometasks.homeworks.homework2;
+
+import java_hometasks.homeworks.homework2.Box;
 
 public class Task2 {
 

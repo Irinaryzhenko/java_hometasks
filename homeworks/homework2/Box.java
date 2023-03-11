@@ -1,4 +1,4 @@
-package java_hometasks.homework2_and_3;
+package java_hometasks.homeworks.homework2;
 
 public class Box {
    private int x;
@@ -23,11 +23,16 @@ public class Box {
             this.type = BoxType.CUBE;
         }
     }
+    public int volume() {
+
+        return  this.x * this.y * this.z;
+    }
 
     public BoxType getType() {
         return type;
 
     }
+
 }
 
 

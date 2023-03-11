@@ -1,4 +1,4 @@
-package java_hometasks.homeworks;
+package java_hometasks.homeworks.homework2;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 public class Task5 {

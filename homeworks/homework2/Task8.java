@@ -1,4 +1,4 @@
-package java_hometasks.homework2_and_3;
+package java_hometasks.homeworks.homework2;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;

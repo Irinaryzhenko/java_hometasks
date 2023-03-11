@@ -1,4 +1,4 @@
-package java_hometasks.homework2_and_3.practicalTasks;
+package java_hometasks.homeworks.practicalTasks;
 
 public class Task1 {
     // Вывести последнюю цифру числа

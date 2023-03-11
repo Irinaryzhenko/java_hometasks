@@ -1,4 +1,6 @@
-package java_hometasks.homework2_and_3;
+package java_hometasks.homeworks.homework2;
+
+import java_hometasks.homeworks.homework2.Car;
 
 public class Task4 {
     public static void main(String[] args) {
