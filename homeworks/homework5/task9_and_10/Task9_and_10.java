@@ -52,22 +52,13 @@ public class Task9_and_10 {
         System.out.println(maxVolumeBox);
 
 
-        File file = new File("C:\\Users\\User\\Desktop\\Home\\java_hometasks\\homeworks\\homework5\\task9_and_10\\output");
-        FileWriter fr = null;
-        try {
-            fr = new FileWriter(file);
-            fr.write(maxVolumeBox.volume());
+        try (PrintWriter writer = new PrintWriter(new FileWriter("C:\\Users\\User\\Desktop\\Home\\java_hometasks\\homeworks\\homework5\\task9_and_10\\output"))) {
+            writer.println(maxVolumeBox);
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                fr.close();
-            } catch (IOException e) {
-                e.printStackTrace();
             }
-
         }
     }
-}
+
 
 
