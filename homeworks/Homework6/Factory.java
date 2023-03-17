@@ -1,27 +1,24 @@
 package java_hometasks.homeworks.Homework6;
 
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
 
 public class Factory {
     private Random random = new Random();
-
-    public Parts producePart() {
-        int numOfPart = random.nextInt(6) + 1;
-        switch (numOfPart) {
-            case 1:
-                return new Parts("Left arm");
-            case 2:
-                return new Parts("Right arm");
-            case 3:
-                return new Parts("Left leg");
-            case 4:
-                return new Parts("Right leg");
-            case 5:
-                return new Parts("Body");
-            case 6:
-                return new Parts("Head");
-            default:
-                return null;
+    private Set<String> kindOfParts = new HashSet<>();
+    public Part producePart() {
+        kindOfParts.add("left arm");
+        kindOfParts.add("right arm");
+        kindOfParts.add("left leg");
+        kindOfParts.add("right leg");
+        kindOfParts.add("body");
+        kindOfParts.add("head");
+        int partNumber = random.nextInt(6) + 1;
+        if (partNumber < 1 || partNumber > kindOfParts.size()) {
+            return null;
         }
+        String partType = (String) kindOfParts.toArray()[partNumber - 1];
+        return new Part(kindOfParts.toString());
     }
 }

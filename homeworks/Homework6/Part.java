@@ -1,9 +1,9 @@
 package java_hometasks.homeworks.Homework6;
 
-public class Parts {
+public class Part {
     private String name;
 
-    public Parts(String name) {
+    public Part(String name) {
         this.name = name;
     }
 
