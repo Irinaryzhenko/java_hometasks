@@ -1,7 +1,5 @@
-package java_hometasks.homeworks.HW6;
-
+package java_hometasks.homeworks.Homework6Final;
 import java.util.Objects;
-
 public class Parts {
     private String name;
 
@@ -32,4 +30,5 @@ public class Parts {
                 "name='" + name + '\'' +
                 '}';
     }
+
 }

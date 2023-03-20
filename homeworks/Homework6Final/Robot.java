@@ -1,8 +1,6 @@
-package java_hometasks.homeworks.HW6;
-
+package java_hometasks.homeworks.Homework6Final;
 import java.util.Objects;
 import java.util.Set;
-
 public class Robot {
     private Set<Parts> partsOfRobot;
 
@@ -30,4 +28,3 @@ public class Robot {
                 '}';
     }
 }
-

@@ -1,17 +1,20 @@
-package java_hometasks.homeworks.HW6;
-
-
+package java_hometasks.homeworks.Homework6Final;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
 import static java.lang.System.out;
-
 public class Factory extends Thread {
     private final Random random = new Random();
+    private volatile boolean execute = true;
+
+    public void setExecute(boolean execute) {
+        this.execute = execute;
+    }
 
     private final List<Parts> partsList = new ArrayList<>();
+
     public synchronized void getPartsForCountry(Country country) {
         Parts temp = null;
         Set<Parts> countryParts = country.getParts();
@@ -49,13 +52,11 @@ public class Factory extends Thread {
 
     @Override
     public void run() {
-
-        boolean isWork = false;
-        while (!isWork) {
+        while (execute) {
             try {
-                Thread.sleep(500);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
-                out.println("I cant't sleep!! - " + e.getMessage());
+
             }
             int numOfPart = random.nextInt(6) + 1;
             switch (numOfPart) {
@@ -78,8 +79,8 @@ public class Factory extends Thread {
                     addPart(new Parts("Head"));
                     break;
             }
-           // out.println("Factory have [" + partsList.size() + "] parts");
-            isWork = isInterrupted();
+
         }
+        out.println("Factory stopped");
     }
 }
