@@ -1,4 +1,4 @@
-package java_hometasks.homeworks.Hometask3;
+package java_hometasks.homeworks.CourseProject.CAR.carEnum;
 
 public enum Color {
     BLACK,
